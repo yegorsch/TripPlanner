@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Destination" representedClassName="Destination" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPast" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startPlaceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startPlaceName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasHops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hop" inverseName="destination" inverseEntity="Hop" syncable="YES"/>
+        <relationship name="hasHousing" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="House" inverseName="destination" inverseEntity="House" syncable="YES"/>
+        <relationship name="hasPlaces" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="destination" inverseEntity="Place" syncable="YES"/>
+    </entity>
+    <entity name="Hop" representedClassName="Hop" syncable="YES" codeGenerationType="class">
+        <attribute name="arrivalPlace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="arrivalPlaceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="arrivalTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="departurePlace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departurePlaceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departureTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="destination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Destination" inverseName="hasHops" inverseEntity="Destination" syncable="YES"/>
+    </entity>
+    <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
+        <attribute name="checkInDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="checkOutDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="destination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Destination" inverseName="hasHousing" inverseEntity="Destination" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName="Place" syncable="YES" codeGenerationType="class">
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="placeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="destination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Destination" inverseName="hasPlaces" inverseEntity="Destination" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Destination" positionX="-63" positionY="-88" width="128" height="193"/>
+        <element name="Hop" positionX="225" positionY="-37" width="128" height="163"/>
+        <element name="House" positionX="153" positionY="171" width="128" height="133"/>
+        <element name="Place" positionX="-74" positionY="225" width="128" height="103"/>
+    </elements>
 </model>

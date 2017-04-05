@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="tripNodeView" customModule="Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="arrivalPlaceLabel" destination="EYc-3Y-SCp" id="ehm-3G-jHQ"/>
+                <outlet property="arrivalTime" destination="cHy-QB-2A7" id="8qB-dG-scr"/>
+                <outlet property="deleteNodeButton" destination="lL0-AD-RL0" id="eYg-d6-KkC"/>
+                <outlet property="departurePlaceLabel" destination="KOo-zD-Kdd" id="RvD-le-Hxc"/>
+                <outlet property="departureTime" destination="s5L-AU-Gfv" id="amo-S3-iPj"/>
+                <outlet property="infoLabel" destination="w0U-ZA-g8t" id="Y76-EU-3GD"/>
+                <outlet property="settingButton" destination="6UU-mC-cGk" id="P69-x4-Di7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="aCk-3f-nMZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-x2-eQz">
+                    <rect key="frame" x="8" y="8" width="217" height="95"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-5k-qCu">
+                            <rect key="frame" x="0.0" y="0.0" width="96.5" height="95"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-zD-Kdd" customClass="UIUnderlinedLabel" customModule="Planner" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="96.5" height="24"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Astana">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014 -2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="s5L-AU-Gfv">
+                                    <rect key="frame" x="0.0" y="24" width="96.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                    <color key="textColor" red="0.48526516559999999" green="0.72326374049999997" blue="0.76805543899999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-3Y-SCp" customClass="UIUnderlinedLabel" customModule="Planner" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="47.5" width="96.5" height="24"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Oskemen">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name=".SFNSDisplay"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1203 - 1213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cHy-QB-2A7">
+                                    <rect key="frame" x="0.0" y="71.5" width="96.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UU-mC-cGk">
+                    <rect key="frame" x="229" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="AhV-mR-20b"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="settings-3"/>
+                </button>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="info" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0U-ZA-g8t">
+                    <rect key="frame" x="8" y="98" width="244" height="90"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL0-AD-RL0">
+                    <rect key="frame" x="229" y="49" width="25" height="25"/>
+                    <state key="normal" title="Button" image="garbage"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="w0U-ZA-g8t" firstAttribute="top" secondItem="lL0-AD-RL0" secondAttribute="bottom" constant="24" id="1pq-Cg-bdt"/>
+                <constraint firstItem="rDq-x2-eQz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="4bf-rh-96P"/>
+                <constraint firstAttribute="trailing" secondItem="rDq-x2-eQz" secondAttribute="trailing" constant="35" id="4du-jI-LWa"/>
+                <constraint firstItem="rDq-x2-eQz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KEF-lf-kqA"/>
+                <constraint firstItem="6UU-mC-cGk" firstAttribute="leading" secondItem="rDq-x2-eQz" secondAttribute="trailing" constant="4" id="Lfr-6o-qSg"/>
+                <constraint firstItem="lL0-AD-RL0" firstAttribute="trailing" secondItem="6UU-mC-cGk" secondAttribute="trailing" id="PLC-QJ-tEz"/>
+                <constraint firstItem="lL0-AD-RL0" firstAttribute="leading" secondItem="6UU-mC-cGk" secondAttribute="leading" id="SUt-hU-zai"/>
+                <constraint firstAttribute="bottom" secondItem="w0U-ZA-g8t" secondAttribute="bottom" id="SzR-Ie-2eM"/>
+                <constraint firstItem="lL0-AD-RL0" firstAttribute="centerY" secondItem="rDq-x2-eQz" secondAttribute="centerY" constant="6" id="Tro-4a-0fb"/>
+                <constraint firstItem="lL0-AD-RL0" firstAttribute="top" secondItem="6UU-mC-cGk" secondAttribute="bottom" constant="11" id="YIz-m4-xjT"/>
+                <constraint firstItem="w0U-ZA-g8t" firstAttribute="leading" secondItem="rDq-x2-eQz" secondAttribute="leading" id="c3v-iV-PWd"/>
+                <constraint firstItem="w0U-ZA-g8t" firstAttribute="top" secondItem="6UU-mC-cGk" secondAttribute="bottom" constant="60" id="cEW-VE-2n0"/>
+                <constraint firstItem="6UU-mC-cGk" firstAttribute="top" secondItem="rDq-x2-eQz" secondAttribute="top" constant="5" id="cPE-4j-pbV"/>
+                <constraint firstAttribute="trailing" secondItem="w0U-ZA-g8t" secondAttribute="trailing" constant="8" id="dtw-sN-C35"/>
+                <constraint firstAttribute="trailing" secondItem="6UU-mC-cGk" secondAttribute="trailing" constant="6" id="fb0-2j-NFT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="17" y="-158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="garbage" width="32" height="32"/>
+        <image name="settings-3" width="32" height="32"/>
+    </resources>
+</document>
