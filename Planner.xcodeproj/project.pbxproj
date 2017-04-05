@@ -29,6 +29,7 @@
 		7489ED571E88CC5900D5B441 /* placeOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489ED561E88CC5900D5B441 /* placeOverviewViewController.swift */; };
 		74A99DE61E90658900B0706D /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A99DE51E90658900B0706D /* Ext.swift */; };
 		74A99DE81E90C9DB00B0706D /* MapOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A99DE71E90C9DB00B0706D /* MapOverviewViewController.swift */; };
+		74C9D9651E954CBD005A155B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 74C9D9641E954CBD005A155B /* README.md */; };
 		74E3A6611E90523F00951A5D /* PlaceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3A6601E90523F00951A5D /* PlaceViewCell.swift */; };
 		74ED61391E8A231600FF3813 /* tripNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ED61381E8A231600FF3813 /* tripNodeView.swift */; };
 		74ED613B1E8A232F00FF3813 /* tripNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74ED613A1E8A232F00FF3813 /* tripNodeView.xib */; };
@@ -88,6 +89,7 @@
 		7489ED561E88CC5900D5B441 /* placeOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placeOverviewViewController.swift; sourceTree = "<group>"; };
 		74A99DE51E90658900B0706D /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext.swift; path = Assets.xcassets/Ext.swift; sourceTree = "<group>"; };
 		74A99DE71E90C9DB00B0706D /* MapOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverviewViewController.swift; sourceTree = "<group>"; };
+		74C9D9641E954CBD005A155B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74E3A6601E90523F00951A5D /* PlaceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewCell.swift; sourceTree = "<group>"; };
 		74ED61381E8A231600FF3813 /* tripNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tripNodeView.swift; sourceTree = "<group>"; };
 		74ED613A1E8A232F00FF3813 /* tripNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tripNodeView.xib; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				742601A51E840EE700CAAA43 /* Other */,
 				742601791E84096D00CAAA43 /* Planner.xcdatamodeld */,
 				742601761E84096D00CAAA43 /* Main.storyboard */,
+				74C9D9641E954CBD005A155B /* README.md */,
 			);
 			path = Planner;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				74E3A6611E90523F00951A5D /* PlaceViewCell.swift in Sources */,
 				74ED613D1E8A4FB200FF3813 /* tripGraphViewController.swift in Sources */,
 				742601751E84096D00CAAA43 /* ViewController.swift in Sources */,
+				74C9D9651E954CBD005A155B /* README.md in Sources */,
 				742601731E84096D00CAAA43 /* AppDelegate.swift in Sources */,
 				746935581E843D770069E7A9 /* ConfigureDestinationViewController.swift in Sources */,
 				7438ED5D1E8FF8D600E0F0D8 /* HousingGraphViewController.swift in Sources */,
