@@ -89,7 +89,7 @@
 		7489ED561E88CC5900D5B441 /* placeOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placeOverviewViewController.swift; sourceTree = "<group>"; };
 		74A99DE51E90658900B0706D /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext.swift; path = Assets.xcassets/Ext.swift; sourceTree = "<group>"; };
 		74A99DE71E90C9DB00B0706D /* MapOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverviewViewController.swift; sourceTree = "<group>"; };
-		74C9D9641E954CBD005A155B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74C9D9641E954CBD005A155B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Planner/README.md; sourceTree = "<group>"; };
 		74E3A6601E90523F00951A5D /* PlaceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewCell.swift; sourceTree = "<group>"; };
 		74ED61381E8A231600FF3813 /* tripNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tripNodeView.swift; sourceTree = "<group>"; };
 		74ED613A1E8A232F00FF3813 /* tripNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tripNodeView.xib; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 		742601661E84096D00CAAA43 = {
 			isa = PBXGroup;
 			children = (
+				74C9D9641E954CBD005A155B /* README.md */,
 				742601711E84096D00CAAA43 /* Planner */,
 				742601891E84096D00CAAA43 /* PlannerTests */,
 				742601941E84096D00CAAA43 /* PlannerUITests */,
@@ -184,7 +185,6 @@
 				742601A51E840EE700CAAA43 /* Other */,
 				742601791E84096D00CAAA43 /* Planner.xcdatamodeld */,
 				742601761E84096D00CAAA43 /* Main.storyboard */,
-				74C9D9641E954CBD005A155B /* README.md */,
 			);
 			path = Planner;
 			sourceTree = "<group>";
